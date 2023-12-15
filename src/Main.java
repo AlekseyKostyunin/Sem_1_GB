@@ -20,9 +20,19 @@ public class Main {
 
         barsik.lifeCycle();
 
+        System.out.println("________________________________________");
+
+        Whales whales = new Whales("Blue", LocalDate.of(1980,4,25),
+                new ArrayList<>(), null, null, 5.8);
+        whales.fly(); // Кит начал летать?
+        whales.toGo(); // Кит начал бегать?
+
+        Cormorant cormorant = new Cormorant(null, LocalDate.of(2021,7,5),
+                new ArrayList<>(), null, null, "Big");
+        cormorant.fly(); // Умеет летать
+        cormorant.toGo(); // умеет ходить
+        cormorant.swim(); // умеет плавать
 
     }
 
 }
-
-//    String name, LocalDate birthDate, List<String> vaccinations, String illness, String owner

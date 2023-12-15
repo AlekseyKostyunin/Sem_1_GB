@@ -63,6 +63,18 @@ public class Animal {
         sleep();
     }
 
+    public void toGo(){
+        System.out.println("The animal is moving...");
+    }
+
+    public void fly(){
+        System.out.println("The animal is flying...");
+    }
+
+    public void swim(){
+        System.out.println("The animal is swimming...");
+    }
+
     @Override
     public String toString() {
         return "Animal{" +
